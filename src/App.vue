@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src"URL"></iframe>
   </div>
 </template>
 
