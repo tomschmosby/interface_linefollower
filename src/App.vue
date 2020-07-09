@@ -1,23 +1,53 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    
     <Layout></Layout>
+    <queue></queue>
+
+     <h3 id="h3Brew">Light</h3>
+  <input type="checkbox" data-toggle="toggle" data-on="Off" data-off="On" id="toggle">
   </div>
 </template>
 
+
+  
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import queue from './submodules/queue/src/App.vue'
 import Layout from'./submodules/base_layout/src/components/interface'
-import 
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    queue,
     Layout
   }
 }
+
+
+  // var socket = io.connect();
+  // (function() {
+  // ('#toggle').bootstrapToggle({
+  //     on: 'ON',
+  //     off: 'OFF'
+  //   });
+  // })
+        // ("#toggle").change(function(){
+        //   if(("#toggle").prop("checked") == true){
+        //    socket.emit('lightOn', 'on\n');
+        //   }else{
+        //    socket.emit('lightOff', 'off\n');}
+        //  });
+
+        // socket.on('lightOn', function() {
+        //   ('#toggle').bootstrapToggle('on');
+        // });
+        //  socket.on('lightOff', function() {
+        //   ('#toggle').bootstrapToggle('off');
+        // });
+
 </script>
 
 <style>
